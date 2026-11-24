@@ -1,4 +1,4 @@
-#include "DataSorege.h"
+ï»¿#include "DataSorege.h"
 
 DataSorege* humanResourcesDepartment;
 bool inMeny = true;
@@ -11,31 +11,31 @@ void open() {
 
 void add() {
 	std::string name;
-	std::cout << "Ââåäèòå èìÿ :";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ :";
 	std::cin >> name;
 	system("cls");
 	std::string surname;
-	std::cout << "Ââåäèòå ôàìèëèþ :";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°Ð¼Ð¸Ð»Ð¸ÑŽ :";
 	std::cin >> surname;
 	system("cls");
 	std::string middle;
-	std::cout << "Ââåäèòå îò÷åñòâî :";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾Ñ‚Ñ‡ÐµÑÑ‚Ð²Ð¾ :";
 	std::cin >> middle;
 	system("cls");
 	std::string position;
-	std::cout << "Ââåäèòå äîëæíîñòü :";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚ÑŒ :";
 	std::cin >> position;
 	system("cls");
 	std::string phone;
-	std::cout << "Ââåäèòå íîìíåð òåëåôîíà : ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼Ð½ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð° : ";
 	std::cin >> phone;
 	system("cls");
 	std::string adress;
-	std::cout << "Ââåäèòå àäðåñ : ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð°Ð´Ñ€ÐµÑ : ";
 	std::cin >> adress;
 	system("cls");
 	std::string pay;
-	std::cout << "Ââåäèòå çàðïëàòó : ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñƒ : ";
 	std::cin >> pay;
 	system("cls");
 	if(humanResourcesDepartment!=nullptr)humanResourcesDepartment->addUnite(name, surname, middle, position, std::stoi(phone), adress, std::stoi(pay));
@@ -58,7 +58,7 @@ void Name() {
 	quantity = humanResourcesDepartment->getQuantity();
 	std::string name;
 	SetConsoleTextAttribute(handle, FOREGROUND_RED);
-	std::cout << "Ââåäèòå èìÿ äëÿ ïîèñêà : " ;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ° : " ;
 	SetConsoleTextAttribute(handle, 0x0007);
 	std::cin >> name;
 	SetConsoleTextAttribute(handle, FOREGROUND_BLUE);
@@ -89,7 +89,7 @@ void pay() {
 void find() {
 	std::string rej;
 	SetConsoleTextAttribute(handle, FOREGROUND_RED);
-	std::cout << "Âñå çàïèñè - all, Èìÿ - name, Äîëæíîñòü - pos, Çàðïëàòà - pay" << std::endl;
+	std::cout << "Ð’ÑÐµ Ð·Ð°Ð¿Ð¸ÑÐ¸ - all, Ð˜Ð¼Ñ - name, Ð”Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚ÑŒ - pos, Ð—Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ð° - pay" << std::endl;
 	SetConsoleTextAttribute(handle, 0x0007);
 	std::cin >> rej;
 	unsigned int sum = 0;
@@ -121,7 +121,7 @@ void find() {
 }
 void deliteLine() {
 	SetConsoleTextAttribute(handle, FOREGROUND_RED);
-	std::cout << "Ââåäèòå íîìåð çàïèñè äëÿ óäàëåíèÿ: " << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð´Ð»Ñ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ñ: " << std::endl;
 	SetConsoleTextAttribute(handle, 0x0007);
 	std::string num;
 	std::cin >> num;
@@ -129,7 +129,7 @@ void deliteLine() {
 	quantity = humanResourcesDepartment->getQuantity();
 	SetConsoleTextAttribute(handle, FOREGROUND_RED);
 	if (std::stoi(num) < quantity) {
-		std::cout << "Çàïèñü : " << humanResourcesDepartment->getUnite(std::stoi(num)) << " Óäàëèíà..." << std::endl;
+		std::cout << "Ð—Ð°Ð¿Ð¸ÑÑŒ : " << humanResourcesDepartment->getUnite(std::stoi(num)) << " Ð£Ð´Ð°Ð»Ð¸Ð½Ð°..." << std::endl;
 			humanResourcesDepartment->deleteUnite(std::stoi(num));
 		}
 	system("pause");
@@ -139,7 +139,7 @@ void deliteLine() {
 void meny() {
 	std::string rej;
 	SetConsoleTextAttribute(handle, FOREGROUND_RED);
-	std::cout << "Äîáàâèòü - 1, íàéòè - 2, óäàëèòü - 3, âûéòè - 4" << std::endl;
+	std::cout << "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ - 1, Ð½Ð°Ð¹Ñ‚Ð¸ - 2, ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ - 3, Ð²Ñ‹Ð¹Ñ‚Ð¸ - 4" << std::endl;
 	SetConsoleTextAttribute(handle, 0x0007);
 	std::cin >> rej;
 	switch (std::stoi(rej))
@@ -170,12 +170,14 @@ void meny() {
 
 int main() {
 	setlocale(LC_ALL, "Russian");
-	SetConsoleOutputCP(1251);
-	SetConsoleCP(1251);
+	if (!SetConsoleOutputCP(1251) || !SetConsoleCP(1251)) {
+		std::cerr << "Failed to set the console code page." << std::endl;
+		return 1;
+	}
 	handle = GetStdHandle(STD_OUTPUT_HANDLE);
 	std::string rej;
 	SetConsoleTextAttribute(handle, FOREGROUND_RED);
-	std::cout << "Îòêðûòü (íåîáõîäèì ôàéë employees_bin.db) - 1, ñîçäàòü (íîâûé ôàéë employees_bin.db) - 2" << std::endl;
+	std::cout << "ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ (Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼ Ñ„Ð°Ð¹Ð» employees_bin.db) - 1, ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ (Ð½Ð¾Ð²Ñ‹Ð¹ Ñ„Ð°Ð¹Ð» employees_bin.db) - 2" << std::endl;
 	SetConsoleTextAttribute(handle, 0x0007);
 	std::cin >> rej;
 	switch (std::stoi(rej))

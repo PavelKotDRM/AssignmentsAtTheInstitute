@@ -1,8 +1,10 @@
-#include <iostream>
+п»ї#include <iostream>
 
 #include <string>
 
 #include <math.h>
+
+#include <windows.h>
 
 using namespace std;
 
@@ -14,7 +16,7 @@ double a;
 
 double b;
 
-//Формулы описаной и вписанной окружностей квадрата
+//Formulas for the circumscribed and inscribed circles of a square
 
 double FormulaSquareCircumscribed() {
 
@@ -34,7 +36,7 @@ double FormulaSquareInscribed() {
 
 //===============================================================================================================
 
-//Формулы описаной и вписанной окружностей Ромба
+//Formulas for the circumscribed and inscribed circles of a rhombus
 
 double FormulaRhombusCircumscribed() {
 
@@ -52,7 +54,7 @@ double FormulaRhombusInscribed() {
 
 //===============================================================================================================
 
-//Формулы описаной и вписанной окружностей прямоугольного треугольника
+//Formulas for the circumscribed and inscribed circles of a right triangle
 
 double FormulaTriangleCircumscribed() {
 
@@ -96,13 +98,13 @@ public:
 
 	void set() {
 
-		cout << "Введите название фигуры на английском (Square - квадрат, Rhombus - ромб, Triangle - треугольник): " << endl;
+		cout << "Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ С„РёРіСѓСЂС‹ РЅР° Р°РЅРіР»РёР№СЃРєРѕРј (Square - РєРІР°РґСЂР°С‚, Rhombus - СЂРѕРјР±, Triangle - С‚СЂРµСѓРіРѕР»СЊРЅРёРє): " << endl;
 
 		cin >> FiguraName;
 
 		if (FiguraName == Square1 || FiguraName == Square2) {
 
-			cout << "Введите сторону квадрата: " << endl;
+			cout << "Р’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ РєРІР°РґСЂР°С‚Р°: " << endl;
 
 			cin >> a;
 
@@ -110,11 +112,11 @@ public:
 
 		else if (FiguraName == Rhombus1 || FiguraName == Rhombus2) {
 
-			cout << "Введите большую диагональ ромба: " << endl;
+			cout << "Р’РІРµРґРёС‚Рµ Р±РѕР»СЊС€СѓСЋ РґРёР°РіРѕРЅР°Р»СЊ СЂРѕРјР±Р°: " << endl;
 
 			cin >> a;
 
-			cout << "Введите меньшую диагональ ромба: " << endl;
+			cout << "Р’РІРµРґРёС‚Рµ РјРµРЅСЊС€СѓСЋ РґРёР°РіРѕРЅР°Р»СЊ СЂРѕРјР±Р°: " << endl;
 
 			cin >> b;
 
@@ -122,11 +124,11 @@ public:
 
 		else if (FiguraName == Triangle1 || FiguraName == Triangle2) {
 
-			cout << "Введите первый катет прямоугольного треугольника: " << endl;
+			cout << "Р’РІРµРґРёС‚Рµ РїРµСЂРІС‹Р№ РєР°С‚РµС‚ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРѕРіРѕ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°: " << endl;
 
 			cin >> a;
 
-			cout << "Введите второй катет прямоугольного треугольника: " << endl;
+			cout << "Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕР№ РєР°С‚РµС‚ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРѕРіРѕ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°: " << endl;
 
 			cin >> b;
 
@@ -134,7 +136,7 @@ public:
 
 		else {
 
-			cout << "Ошибка: название фигуры введено некорректно" << endl;
+			cout << "РћС€РёР±РєР°: РЅР°Р·РІР°РЅРёРµ С„РёРіСѓСЂС‹ РІРІРµРґРµРЅРѕ РЅРµРєРѕСЂСЂРµРєС‚РЅРѕ" << endl;
 
 		}
 
@@ -142,43 +144,43 @@ public:
 
 	void show() {
 
-		cout << "Название фигуры: " << FiguraName << endl;
+		cout << "РќР°Р·РІР°РЅРёРµ С„РёРіСѓСЂС‹: " << FiguraName << endl;
 
 		if (FiguraName == Square1 || FiguraName == Square2) {
 
-			cout << "Сторона квадрата: " << a << endl;
+			cout << "РЎС‚РѕСЂРѕРЅР° РєРІР°РґСЂР°С‚Р°: " << a << endl;
 
-			cout << "Радиус описаной окружности: " << FormulaSquareCircumscribed() << endl;
+			cout << "Р Р°РґРёСѓСЃ РѕРїРёСЃР°РЅРѕР№ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё: " << FormulaSquareCircumscribed() << endl;
 
-			cout << "Радиус вписанной окружности: " << FormulaSquareInscribed() << endl;
+			cout << "Р Р°РґРёСѓСЃ РІРїРёСЃР°РЅРЅРѕР№ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё: " << FormulaSquareInscribed() << endl;
 
 		}
 
 		else if (FiguraName == Rhombus1 || FiguraName == Rhombus2) {
 
-			cout << "Большая диагональ ромба: " << a << endl;
+			cout << "Р‘РѕР»СЊС€Р°СЏ РґРёР°РіРѕРЅР°Р»СЊ СЂРѕРјР±Р°: " << a << endl;
 
-			cout << "Меньшая диагональ ромба: " << b << endl;
+			cout << "РњРµРЅСЊС€Р°СЏ РґРёР°РіРѕРЅР°Р»СЊ СЂРѕРјР±Р°: " << b << endl;
 
-			cout << "Сторона ромба: " << sqrt((a * a) + (b * b)) / 2 << endl;
+			cout << "РЎС‚РѕСЂРѕРЅР° СЂРѕРјР±Р°: " << sqrt((a * a) + (b * b)) / 2 << endl;
 
-			cout << "Радиус описаной окружности: " << FormulaRhombusCircumscribed() << endl;
+			cout << "Р Р°РґРёСѓСЃ РѕРїРёСЃР°РЅРѕР№ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё: " << FormulaRhombusCircumscribed() << endl;
 
-			cout << "Радиус вписанной окружности: " << FormulaRhombusInscribed() << endl;
+			cout << "Р Р°РґРёСѓСЃ РІРїРёСЃР°РЅРЅРѕР№ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё: " << FormulaRhombusInscribed() << endl;
 
 		}
 
 		else if (FiguraName == Triangle1 || FiguraName == Triangle2) {
 
-			cout << "Первый катет прямоугольного треугольника: " << a << endl;
+			cout << "РџРµСЂРІС‹Р№ РєР°С‚РµС‚ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРѕРіРѕ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°: " << a << endl;
 
-			cout << "Второй катет прямоугольного треугольника: " << b << endl;
+			cout << "Р’С‚РѕСЂРѕР№ РєР°С‚РµС‚ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРѕРіРѕ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°: " << b << endl;
 
-			cout << "Гипотенуза прямоугольного треугольника: " << sqrt((a * a) + (b * b)) << endl;
+			cout << "Р“РёРїРѕС‚РµРЅСѓР·Р° РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРѕРіРѕ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°: " << sqrt((a * a) + (b * b)) << endl;
 
-			cout << "Радиус описаной окружности: " << FormulaTriangleCircumscribed() << endl;
+			cout << "Р Р°РґРёСѓСЃ РѕРїРёСЃР°РЅРѕР№ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё: " << FormulaTriangleCircumscribed() << endl;
 
-			cout << "Радиус вписанной окружности: " << FormulaTriangleInscribed() << endl;
+			cout << "Р Р°РґРёСѓСЃ РІРїРёСЃР°РЅРЅРѕР№ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё: " << FormulaTriangleInscribed() << endl;
 
 		}
 
@@ -187,6 +189,11 @@ public:
 };
 
 int main() {
+
+	if (!SetConsoleOutputCP(1251)) {
+		cerr << "Failed to set the console output code page." << endl;
+		return 1;
+	}
 
 	setlocale(0, "");
 

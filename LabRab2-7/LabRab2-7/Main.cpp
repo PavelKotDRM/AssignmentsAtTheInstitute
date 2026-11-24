@@ -6,7 +6,7 @@
 int main() {
 	//A
 	srand(time(NULL));
-	Y object(rand() % 10 + 1, rand() % 10 + 1, rand() % 10 + 1);/* синтаксис --static_cast<потомок*>(указатель_родителя)->функция()-- функция потомка из базового класса*/
+	Y object(rand() % 10 + 1, rand() % 10 + 1, rand() % 10 + 1);/* syntax --static_cast<derived*>(base_pointer)->function()-- derived function from the base class*/
 	X tmp = object;
 	print(tmp);
 	print(object);
@@ -43,7 +43,7 @@ int main() {
 	std::cout << object2->run() << std::endl;
 	std::cout << "------------------------------------D--------------------------------------------" << std::endl;
 	std::cout << "------------------------------------G----------------------------------------" << std::endl;
-	Y object4(rand() % 10 + 1, rand() % 10 + 1, rand() % 10 + 1);/* синтаксис --static_cast<потомок*>(указатель_родителя)->функция()-- функция потомка из базового класса*/
+	Y object4(rand() % 10 + 1, rand() % 10 + 1, rand() % 10 + 1);/* syntax --static_cast<derived*>(base_pointer)->function()-- derived function from the base class*/
 	X tmp2 = object;
 	print(tmp);
 	print(object);

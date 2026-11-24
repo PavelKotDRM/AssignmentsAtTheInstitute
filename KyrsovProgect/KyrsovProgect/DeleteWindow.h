@@ -10,7 +10,7 @@ namespace KyrsovProgect {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// —водка дл€ MyForm
+	/// Summary for MyForm
 	/// </summary>
 	public ref class DeleteWindow : public System::Windows::Forms::Form
 	{
@@ -19,13 +19,13 @@ namespace KyrsovProgect {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: add constructor code
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// ќсвободить все используемые ресурсы.
+		/// Release all resources in use.
 		/// </summary>
 		~DeleteWindow()
 		{
@@ -37,14 +37,14 @@ namespace KyrsovProgect {
 
 	private:
 		/// <summary>
-		/// ќб€зательна€ переменна€ конструктора.
+		/// Required designer variable.
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// “ребуемый метод дл€ поддержки конструктора Ч не измен€йте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// Required method for designer support - do not modify
+		/// the contents of this method with the code editor.
 		/// </summary>
 		void InitializeComponent(void)
 		{

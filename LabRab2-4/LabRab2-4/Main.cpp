@@ -1,10 +1,15 @@
-
+п»ї
 #include <cstdlib>
 #include <ctime>
+#include <windows.h>
 #include "Nraz.h"
 
 
 int main(void) {
+	if (!SetConsoleOutputCP(1251)) {
+		std::cerr << "Failed to set the console output code page." << std::endl;
+		return 1;
+	}
 	srand(time(nullptr));
 	int massiv[20];
 	for (int i = 0; i < 20; i++)
@@ -12,7 +17,7 @@ int main(void) {
 		massiv[i] = rand() % 256;
 	}
 	Nraz test(massiv[0]);
-	std::cout << "Bit   7  6  5  4    3  2  1  0   16-код     10-код" << std::endl;
+	std::cout << "Bit   7  6  5  4    3  2  1  0   16-РєРѕРґ     10-РєРѕРґ" << std::endl;
 	for (int i = 1; i < 20; i++)
 	{
 		std::cout << "------------------" << i << "--------------------" << std::endl;

@@ -1,180 +1,181 @@
-# Назначения в институте (Assignments at The Institute)
+# Assignments at the Institute
 
-Репозиторий содержит коллекцию лабораторных работ и курсовых проектов по курсу программирования на C++, реализованные на базе Visual Studio.
+This repository contains a collection of C++ programming lab assignments and coursework projects built with Visual Studio.
 
-## 📋 Структура проектов
+## Project Structure
 
-### Лабораторные работы (Lab Assignments)
+### Lab Assignments
 
-#### **LabRab2-1** - Работа с функциями и классами
-- Практика в создании и использовании функций
-- Использование динамического выделения памяти
-- Работа с классами и конструкторами
+#### **LabRab2-1** - Functions and Classes
+- Creating and using functions
+- Dynamic memory allocation
+- Classes and constructors
 
-#### **LabRab2-2** - Класс Triangle
-- Реализация класса для работы с треугольниками
-- Вычисление свойств треугольника
-- Демонстрация объектно-ориентированного программирования
+#### **LabRab2-2** - Triangle Class
+- A class for working with triangles
+- Calculating triangle properties
+- Demonstrating object-oriented programming
 
-#### **LabRab2-4** - Побитовые операции и сдвиги
-- Работа с битовыми операциями
-- Циклические сдвиги влево и вправо
-- Логические сдвиги
+#### **LabRab2-4** - Bitwise Operations and Shifts
+- Bitwise operations
+- Circular left and right shifts
+- Logical shifts
 
-#### **LabRab2-5** - Сортировка массивов
-- Реализация различных алгоритмов сортировки
-- Работа с наследованием (Massiv, Sort)
-- Операции над массивами
+#### **LabRab2-5** - Array Sorting
+- Various sorting algorithms
+- Inheritance (Massiv, Sort)
+- Array operations
 
-#### **LabRab2-6** - Полиморфизм и наследование
-- Создание базового класса и наследников (First - Sixth)
-- Демонстрация полиморфизма
-- Работа с виртуальными методами
+#### **LabRab2-6** - Polymorphism and Inheritance
+- A base class and derived classes (First - Sixth)
+- Demonstrating polymorphism
+- Virtual methods
 
-#### **LabRab2-7** - Наследование и копирование
-- Класс X с операторами копирования
-- Класс Y, наследующий от X
-- Работа с указателями и операторами присваивания
+#### **LabRab2-7** - Inheritance and Copying
+- Class X with copy operators
+- Class Y derived from X
+- Pointers and assignment operators
 
-#### **LabRab2-8** - Работа с файлами и классами
-- Класс MYТЕХТ с функциональностью работы с текстом
-- Класс DRAIV для работы с хранилищем данных
-- Демонстрация паттернов проектирования
+#### **LabRab2-8** - Files and Classes
+- The MYТЕХТ class for working with text
+- The DRAIV class for data storage
+- Demonstrating design patterns
 
-### Практические работы (Practical Assignments)
+### Practical Assignments
 
-#### **PractRab2-1** - Функции и параметры
-- Практика написания функций
-- Работа с параметрами и возвращаемыми значениями
+#### **PractRab2-1** - Functions and Parameters
+- Writing functions
+- Parameters and return values
 
-#### **PractRab2-2** - Продвинутые концепции
-- Различные механизмы программирования на C++
+#### **PractRab2-2** - Advanced Concepts
+- Various C++ programming mechanisms
 
-#### **PractRab2-2.2** - Альтернативная реализация
-- Вариант практической работы 2
+#### **PractRab2-2.2** - Alternative Implementation
+- A variant of practical assignment 2
 
-#### **PractRab2-3** - Специализированные задачи
-- Решение конкретных задач программирования
+#### **PractRab2-3** - Specialized Tasks
+- Solutions to specific programming tasks
 
-#### **PractRab2-4** - Геометрические вычисления
-- Работа с геометрическими фигурами
-- Вычисление площадей и радиусов окружностей
-- Квадрат и вписанная/описанная окружность
+#### **PractRab2-4** - Geometric Calculations
+- Working with geometric shapes
+- Calculating areas and circle radii
+- A square and its inscribed and circumscribed circles
 
-### Курсовые работы (Coursework)
+### Coursework
 
-#### **KR1** - Первая курсовая работа
-- Содержит практическую часть PractRab2-4
-- Геометрические вычисления для квадрата
+#### **KR1** - First Coursework Assignment
+- Contains the practical part of PractRab2-4
+- Geometric calculations for a square
 
-#### **KR2** - Вторая курсовая работа
-- Реализация класса Rational для работы с рациональными числами (дробями)
-- Основные классы:
-  - **Drob** - структура для представления дроби
-  - **Rational** - класс для выполнения операций над дробями
-  - **Nod** - вычисление наибольшего общего делителя
-- Поддерживаемые операции:
-  - Сумма
-  - Вычитание
-  - Умножение
-  - Деление
+#### **KR2** - Second Coursework Assignment
+- A Rational class for working with rational numbers (fractions)
+- Main classes:
+  - **Drob** - a structure representing a fraction
+  - **Rational** - a class for operations on fractions
+  - **Nod** - greatest common divisor calculation
+- Supported operations:
+  - Addition
+  - Subtraction
+  - Multiplication
+  - Division
 
-#### **KursovRabRedax** - Курсовая работа (редакция)
-- Система управления данными сотрудников
-- Основные классы:
-  - **DataSorege** - управление хранилищем данных
-  - **Unite** - объединение данных
-- Функциональность:
-  - Импорт данных из текстовых файлов
-  - Добавление новых записей
-  - Поиск и фильтрация информации
-  - Сохранение и экспорт данных
+#### **KursovRabRedax** - Coursework (Revised Edition)
+- Employee data management system
+- Main classes:
+  - **DataSorege** - data storage management
+  - **Unite** - data merging
+- Features:
+  - Importing data from text files
+  - Adding records
+  - Searching and filtering information
+  - Saving and exporting data
 
-#### **KyrsovProgect** - Курсовой проект (полная версия)
-- Расширенная версия курсовой работы
-- Графический интерфейс (Windows Forms)
-- Основные классы:
-  - **FirstWindow** - главное окно приложения
-  - **DeleteWindow** - окно удаления записей
-  - **DataSorege** - управление данными
-  - **Operation** - выполнение операций
-- Функциональность:
-  - Графический интерфейс пользователя
-  - Управление базой данных сотрудников
-  - Операции CRUD (Create, Read, Update, Delete)
+#### **KyrsovProgect** - Coursework Project (Full Version)
+- Extended version of the coursework
+- Graphical interface (Windows Forms)
+- Main classes:
+  - **FirstWindow** - main application window
+  - **DeleteWindow** - record deletion window
+  - **DataSorege** - data management
+  - **Operation** - performing operations
+- Features:
+  - Graphical user interface
+  - Employee database management
+  - CRUD operations (Create, Read, Update, Delete)
 
-## 🛠️ Инструменты и технологии
+## Tools and Technologies
 
-- **Язык программирования**: C++
+- **Programming language**: C++
 - **IDE**: Visual Studio (MSVC)
-- **Стандартный библиотеки**: STL (Standard Template Library)
-- **Платформа**: Windows
-- **Дополнительно**: Windows Forms для графических приложений
+- **Standard library**: STL (Standard Template Library)
+- **Platform**: Windows
+- **Additional technologies**: Windows Forms for graphical applications
 
-## 🏗️ Основные концепции, используемые в проектах
+## Core Concepts Used in the Projects
 
-- **Объектно-ориентированное программирование (ООП)**
-  - Классы и объекты
-  - Наследование
-  - Полиморфизм
-  - Инкапсуляция
+- **Object-oriented programming (OOP)**
+  - Classes and objects
+  - Inheritance
+  - Polymorphism
+  - Encapsulation
 
-- **Работа с памятью**
-  - Динамическое выделение памяти
-  - Указатели
-  - Управление ресурсами
+- **Memory management**
+  - Dynamic memory allocation
+  - Pointers
+  - Resource management
 
-- **Алгоритмы и структуры данных**
-  - Сортировка массивов
-  - Битовые операции
-  - Математические вычисления
+- **Algorithms and data structures**
+  - Array sorting
+  - Bitwise operations
+  - Mathematical calculations
 
-- **Работа с файлами и хранилищем**
-  - Импорт/экспорт данных
-  - Работа с текстовыми файлами
+- **Files and storage**
+  - Data import and export
+  - Working with text files
 
-## 📦 Структура папок
+## Folder Structure
 
-```
+```text
 AssignmentsAtTheInstitute/
-├── KR1/                    # Первая курсовая работа
-├── KR2/                    # Вторая курсовая работа
-├── KursovRabRedax/         # Курсовая работа (редакция)
-├── KyrsovProgect/          # Полный курсовой проект с GUI
-├── LabRab2-1/              # Лабораторная 1
-├── LabRab2-2/              # Лабораторная 2
-├── LabRab2-4/              # Лабораторная 4
-├── LabRab2-5/              # Лабораторная 5
-├── LabRab2-6/              # Лабораторная 6
-├── LabRab2-7/              # Лабораторная 7
-├── LabRab2-8/              # Лабораторная 8
-├── PractRab2-1/            # Практическая 1
-├── PractRab2-2/            # Практическая 2
-├── PractRab2-2.2/          # Практическая 2.2
-├── PractRab2-3/            # Практическая 3
-└── PractRab2-4/            # Практическая 4
+├── KR1/                    # First coursework assignment
+├── KR2/                    # Second coursework assignment
+├── KursovRabRedax/         # Coursework (revised edition)
+├── KyrsovProgect/          # Full coursework project with GUI
+├── LabRab2-1/              # Lab assignment 1
+├── LabRab2-2/              # Lab assignment 2
+├── LabRab2-4/              # Lab assignment 4
+├── LabRab2-5/              # Lab assignment 5
+├── LabRab2-6/              # Lab assignment 6
+├── LabRab2-7/              # Lab assignment 7
+├── LabRab2-8/              # Lab assignment 8
+├── PractRab2-1/            # Practical assignment 1
+├── PractRab2-2/            # Practical assignment 2
+├── PractRab2-2.2/          # Practical assignment 2.2
+├── PractRab2-3/            # Practical assignment 3
+└── PractRab2-4/            # Practical assignment 4
 ```
 
-## 🚀 Использование проектов
+## Using the Projects
 
-1. Откройте нужный файл `.sln` в Visual Studio
-2. Выберите конфигурацию (Debug/Release)
-3. Постройте решение (Build Solution)
-4. Запустите проект (Start Debugging или Ctrl+F5)
+1. Open the desired `.sln` file in Visual Studio.
+2. Select a configuration (Debug or Release).
+3. Build the solution (Build Solution).
+4. Run the project (Start Debugging or Ctrl+F5).
 
-## 📝 Примечания
+## Notes
 
-- Все проекты разработаны для учебных целей
-- Используются различные подходы и паттерны проектирования
-- Код содержит комментарии на русском языке
-- Некоторые файлы используют встроенные функции Windows (например, `system("cls")`)
+- All projects were developed for educational purposes.
+- The projects use various approaches and design patterns.
+- Source comments are in English; some program text remains in Russian.
+- Source files use UTF-8. Console projects with Russian text use Windows-1251 for narrow strings and console output; KursovRabRedax also uses it for console input.
+- Some files use built-in Windows functions (for example, `system("cls")`).
 
-## 👨‍🎓 Цель
+## Goal
 
-Данная коллекция проектов демонстрирует прогрессивное изучение C++ и объектно-ориентированного программирования, начиная с базовых концепций функций и классов и заканчивая сложными приложениями с графическим интерфейсом и управлением данными.
+This collection demonstrates the progression of learning C++ and object-oriented programming, from basic functions and classes to more complex applications with graphical interfaces and data management.
 
 ---
 
-**Статус**: Архивные учебные проекты
-**Язык**: C++ (MSVC)
-**Платформа**: Windows
+- **Status**: Archived educational projects
+- **Language**: C++ (MSVC)
+- **Platform**: Windows

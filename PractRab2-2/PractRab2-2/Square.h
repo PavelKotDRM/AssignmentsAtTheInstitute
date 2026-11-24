@@ -13,8 +13,8 @@ using namespace std;
 class Square
 {
 private:
-	int a; //сторона
-	double S; //площадь
+	int a; //side
+	double S; //area
 public:
 	Square();
 	Square(int _a);

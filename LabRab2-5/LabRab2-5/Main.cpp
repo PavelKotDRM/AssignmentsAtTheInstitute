@@ -21,7 +21,7 @@ int main() {
 	two.show();
 	cout << "/----------------------------Three---------------------/" << endl;
 	three->show();
-	cout << three->countSum() << " " << static_cast<Sort*>(three)->summ() /* синтаксис --static_cast<потомок*>указатель_родителя->функция()-- функция потомка из базового класса*/ << endl;
+	cout << three->countSum() << " " << static_cast<Sort*>(three)->summ() /* syntax --static_cast<derived*>base_pointer->function()-- derived function from the base class*/ << endl;
 	static_cast<Sort*>(three)->sortMetOne();
 	static_cast<Sort*>(three)->sortMetTwo();
 	cout << "/-----------------------------Sorted--------------------/" << endl;

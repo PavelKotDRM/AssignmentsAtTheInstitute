@@ -15,7 +15,7 @@ Square::Square(int _a)
 Square::Square(const Square& Square)
 {
 	cout << "Copy constr!" <<  (int)&(*this) << endl;
-	//конструктор копирования
+	//copy constructor
 }
 
 Square::~Square()

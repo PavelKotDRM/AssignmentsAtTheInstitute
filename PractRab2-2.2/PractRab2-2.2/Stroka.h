@@ -6,35 +6,35 @@
 #include <iostream>
 class Stroka
 {
-	char* str; //адрес динамической строки 
+	char* str; //address of the dynamically allocated string
 
-	int n;//длина строки 
+	int n;//string length
 
-	char ch; //символ 
+	char ch; //character
 
-public://методы 
+public://methods
 
-	Stroka();//пустая строка 
+	Stroka();//empty string
 
 	Stroka(char* _str);
 
-	void SetChar(char);//установка символа 
+	void SetChar(char);//set character
 
-	Stroka(const Stroka&);//конструктор копирования 
+	Stroka(const Stroka&);//copy constructor
 
-	int GetNSTR(); //получение длины строки 
+	int GetNSTR(); //get string length
 
-	void ClearSTR();// очистка строки 
+	void ClearSTR();// clear string
 
-	~Stroka(); //деструктор  
+	~Stroka(); //destructor
 
-	char* GetSTR();//получение адреса строки  
+	char* GetSTR();//get string address
 
 private:
 
-	friend void printStr(Stroka& object);   //дружественная функция 1 
+	friend void printStr(Stroka& object);   //friend function 1
 
-	friend int findSimbol(char simbol, Stroka& object);  // дружественная функция 2 
+	friend int findSimbol(char simbol, Stroka& object);  // friend function 2
 };
 #endif // !STROKA_H
 

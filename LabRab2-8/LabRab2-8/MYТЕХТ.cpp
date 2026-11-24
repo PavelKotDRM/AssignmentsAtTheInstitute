@@ -1,11 +1,11 @@
-#include "MY“≈’“.h"
+Ôªø#include "MY–¢–ï–•–¢.h"
 
-MY“≈’“::MY“≈’“()
+MY–¢–ï–•–¢::MY–¢–ï–•–¢()
 {
 	std::cout << text << std::endl;
 }
 
-MY“≈’“::~MY“≈’“()
+MY–¢–ï–•–¢::~MY–¢–ï–•–¢()
 {
 	
 }

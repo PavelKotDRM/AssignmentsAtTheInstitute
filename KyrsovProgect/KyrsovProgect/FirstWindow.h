@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include "DataSorege.h"
 #include <msclr\marshal_cppstd.h>
@@ -14,7 +14,7 @@ namespace KyrsovProgect {
 
 
 	/// <summary>
-	/// Сводка для FirstWindow
+	/// Summary for FirstWindow
 	/// </summary>
 	public ref class FirstWindow : public System::Windows::Forms::Form
 	{
@@ -23,13 +23,13 @@ namespace KyrsovProgect {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: add constructor code
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// Release all resources in use.
 		/// </summary>
 		~FirstWindow()
 		{
@@ -108,14 +108,14 @@ namespace KyrsovProgect {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// Required designer variable.
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// Required method for designer support - do not modify
+		/// the contents of this method with the code editor.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -177,7 +177,7 @@ namespace KyrsovProgect {
 			// 
 			this->AddInUnite->Name = L"AddInUnite";
 			this->AddInUnite->Size = System::Drawing::Size(126, 22);
-			this->AddInUnite->Text = L"Добавить";
+			this->AddInUnite->Text = L"Р”РѕР±Р°РІРёС‚СЊ";
 			this->AddInUnite->Click += gcnew System::EventHandler(this, &FirstWindow::AddUniteEvent);
 			this->AddInUnite->DoubleClick += gcnew System::EventHandler(this, &FirstWindow::AddUniteEvent);
 			// 
@@ -185,7 +185,7 @@ namespace KyrsovProgect {
 			// 
 			this->DeleteUnite->Name = L"DeleteUnite";
 			this->DeleteUnite->Size = System::Drawing::Size(126, 22);
-			this->DeleteUnite->Text = L"Удалить";
+			this->DeleteUnite->Text = L"РЈРґР°Р»РёС‚СЊ";
 			this->DeleteUnite->Click += gcnew System::EventHandler(this, &FirstWindow::ClikDeleteUnite);
 			this->DeleteUnite->DoubleClick += gcnew System::EventHandler(this, &FirstWindow::ClikDeleteUnite);
 			// 
@@ -193,7 +193,7 @@ namespace KyrsovProgect {
 			// 
 			this->FindUnite->Name = L"FindUnite";
 			this->FindUnite->Size = System::Drawing::Size(126, 22);
-			this->FindUnite->Text = L"Найти";
+			this->FindUnite->Text = L"РќР°Р№С‚Рё";
 			this->FindUnite->Click += gcnew System::EventHandler(this, &FirstWindow::FindUniteEvent);
 			this->FindUnite->DoubleClick += gcnew System::EventHandler(this, &FirstWindow::FindUniteEvent);
 			// 
@@ -258,7 +258,7 @@ namespace KyrsovProgect {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 0;
-			this->button1->Text = L"Найти";
+			this->button1->Text = L"РќР°Р№С‚Рё";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &FirstWindow::FindDataEvent);
 			// 
@@ -466,7 +466,7 @@ namespace KyrsovProgect {
 	private: System::Void ImportMassUniteEvent(System::Object^ sender, System::EventArgs^ e) {
 	}
 
-		   // Вкладка найти ---------------------------------------------------------------------------
+		   // Find tab ---------------------------------------------------------------------------
 	private: System::Void FindDataEvent(System::Object^ sender, System::EventArgs^ e) {
 		if (this->Data == nullptr)
 		{
@@ -641,7 +641,7 @@ namespace KyrsovProgect {
 	}
 
 
-	// Вкладка deleted ---------------------------------------------------------------------------
+	// Delete tab ---------------------------------------------------------------------------
 	private: System::Void DeletedUniteEvent(System::Object^ sender, System::EventArgs^ e) {
 		if (this->Data == nullptr)
 		{
@@ -715,7 +715,7 @@ namespace KyrsovProgect {
 			break;
 		}
 	}
-		   // Вкладка Add ---------------------------------------------------------------------------
+		   // Add tab ---------------------------------------------------------------------------
 	private: System::Void AddEvent(System::Object^ sender, System::EventArgs^ e) {
 		if (this->Data == nullptr)
 		{

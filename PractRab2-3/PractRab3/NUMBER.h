@@ -8,35 +8,35 @@ using namespace std;
 
 class NUMBER
 {
-	char strb[20];//десятичное число, заданное в виде строки 
+	char strb[20];//decimal number represented as a string
 
-	char stre[50];//переведенное число по указанному основанию, в виде строки 
+	char stre[50];//number converted to the specified base, represented as a string
 
-	unsigned int osnova;//основание числа 
+	unsigned int osnova;//number base
 
 
 
-public://методы 
+public://methods
 
-	NUMBER() {}//конструктор пустой для массива 
+	NUMBER() {}//default constructor for arrays
 
-	NUMBER(char* n, unsigned int f);//конструктор с параметрами 
+	NUMBER(char* n, unsigned int f);//constructor with parameters
 
-	~NUMBER() {}//деструктор 
+	~NUMBER() {}//destructor
 
-	void Perevod();//перевод числа по основанию 
+	void Perevod();//convert the number to the specified base
 
 private:
 
-	bool Analiz();//анализ правильности задания параметров:O 
+	bool Analiz();//validate the parameters:O
 
-	//1 - все параметры правильные, 0 - неправильные 
+	//1 - all parameters are valid, 0 - invalid
 
-	//проработать диагностику 
+	//improve diagnostics
 
 public:
 
-	friend void Print(NUMBER& object);//дружественная функция печати 
+	friend void Print(NUMBER& object);//friend print function
 };
 
 #endif // !NUMBER_H

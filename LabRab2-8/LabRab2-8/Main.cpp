@@ -1,12 +1,12 @@
+п»ї
+//_getch() returns the key code
+//Console functions
+//_getwch() returns a wide character
 
-//_getch() возвращает цифру клавиши
-//Функции консоли
-//_getwch() возращает расширенный диапозон
-
-#include "MYТЕХТ.h"
+#include "MYРўР•РҐРў.h"
 
 
 
 int main() {
-	MYТЕХТ r;
+	MYРўР•РҐРў r;
 }
